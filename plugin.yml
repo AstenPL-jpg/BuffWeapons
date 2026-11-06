@@ -1,0 +1,22 @@
+name: BuffWeapons
+version: 1.0.0
+main: pl.buffweapons.BuffWeapons
+api-version: '26.2'
+description: Losowa bronia z buffami i ultimate dla kazdego gracza.
+commands:
+  bronie:
+    description: Otwiera menu ze wszystkimi bronmi, buffami i ultimate.
+    aliases: [weapons]
+  uzyjultimate:
+    description: Aktywuje ultimate Twojej broni (gdy jest gotowe).
+    aliases: [ultimate]
+  ultimatesettings:
+    description: Wybierz, jakimi sposobami mozna aktywowac ultimate.
+    aliases: [usettings]
+  bronieadmin:
+    description: Komendy administracyjne pluginu.
+    permission: buffweapons.admin
+permissions:
+  buffweapons.admin:
+    description: Dostep do /bronieadmin
+    default: op

@@ -1,0 +1,57 @@
+# Receptura Krysztalu Rerolla (ksztalt stały):
+#   C E C
+#   E N E
+#   C E C
+reroll:
+  center: NETHER_STAR
+  corner: DIAMOND
+  edge: ENDER_PEARL
+
+trident:
+  reach-bonus: 0.5          # 3.0 + 0.5 = 3.5 bloku
+  sword-attack-speed: 1.6   # tempo ataku miecza
+  sweep-damage: 1.0         # atak obszarowy "jak miecz"
+  shield-disable-ticks: 100
+  ultimate:
+    duration-seconds: 10
+    required-hits: 7        # trafienia w deszczu / burzy
+    damage-multiplier: 1.3
+    lightning-damage: 4.0
+    lightning-fire-ticks: 60
+
+spear:
+  attack-speed: 1.5         # miecz = 1.6, wiec cooldown minimalnie dluzszy
+  damage-multiplier: 1.2
+  ultimate:
+    duration-seconds: 10    # w zalozeniach brakowalo czasu dla wloczni
+    required-hits: 15
+    dash-power: 1.6
+    dash-cooldown-ticks: 12
+
+crossbow:
+  ignite-chance: 0.25
+  ignite-seconds: 4
+  ultimate:
+    duration-seconds: 15
+    required-hits: 20
+    power-bonus-damage: 3.0 # Power V = +3 do bazowych 2 obrazen strzaly
+    quick-charge-level: 5
+
+sword:
+  ultimate:
+    duration-seconds: 10
+    required-streak: 5
+    crit-multiplier: 1.5
+    attack-speed-multiplier: 2.0  # 2.0 = cooldown o 50% krotszy
+    destroy-shield-item: false    # true = tarcza znika z ekwipunku, false = dlugi cooldown tarczy
+    shield-disable-ticks: 200
+
+axe:
+  freeze-every-crits: 5
+  freeze-seconds: 1
+  ultimate:
+    duration-seconds: 7.5
+    charge-seconds: 5
+    attack-speed-multiplier: 2.0
+    aoe-radius: 3.0
+    aoe-damage-fraction: 0.6
